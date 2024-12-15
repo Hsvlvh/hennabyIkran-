@@ -20,21 +20,28 @@ header {
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    display: flex; /* This makes the navigation items appear in a horizontal line */
+    justify-content: center; /* Center the items horizontally */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-right: 20px; /* Space between navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove space after the last item */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+    padding: 10px 15px; /* Adds space around the text */
+    display: block; /* Makes the anchor tag act like a block for easier padding */
 }
 
 nav ul li a:hover {
+    background-color: #f9c5d1; /* Change background color on hover */
     text-decoration: underline;
 }
 
@@ -153,5 +160,8 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    margin-top: 30px;
+}
+
     margin-top: 30px;
 }
